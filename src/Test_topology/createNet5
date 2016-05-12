@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Clean any previous network"
+cleanNet ovs-bridge
+
+echo "Create new network"
+createOVSBridgedPair veth1 veth2 y ovs-bridge
+createOVSBridgedPair veth3 veth4 n ovs-bridge
+createOVSBridgedPair veth5 veth6 n ovs-bridge
+createOVSBridgedPair veth7 veth8 n ovs-bridge
+createOVSBridgedPair veth9 veth10 n ovs-bridge
+createOVSBridgedPair veth11 veth12 n ovs-bridge
+createOVSBridgedPair veth13 veth14 n ovs-bridge
+createOVSBridgedPair veth15 veth16 n ovs-bridge
+createOVSBridgedPair veth17 veth18 n ovs-bridge
+createOVSBridgedPair veth19 veth20 n ovs-bridge
